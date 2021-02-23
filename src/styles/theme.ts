@@ -11,5 +11,5 @@ export const theme = {
     purple: '#6E40C9',
     purpleDark: '#5931A9',
     twitter: '#2AA9E0',
-  }
+  },
 };

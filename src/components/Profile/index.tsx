@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container } from './styles';
 
 const Profile = () => (
   <Container>
@@ -7,7 +7,7 @@ const Profile = () => (
     <div>
       <strong>Rafael Martins</strong>
       <p>
-        <img src="icons/level.svg" alt="Level"/>
+        <img src="icons/level.svg" alt="Level" />
         Level 1
       </p>
     </div>

@@ -41,9 +41,9 @@ const Countdown = () => {
 
       <CountdownButton onClick={startCountdown}>
         Iniciar um ciclo
-    </CountdownButton>
+      </CountdownButton>
     </>
   );
-}
+};
 
 export default Countdown;

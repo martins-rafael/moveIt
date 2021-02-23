@@ -14,7 +14,7 @@ export const Container = styled.div`
     justify-content: space-evenly;
     font-size: 8.5rem;
     text-align: center;
-    background: ${({theme}) => theme.colors.backgroundLight};
+    background: ${({ theme }) => theme.colors.backgroundLight};
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 
@@ -53,6 +53,6 @@ export const CountdownButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-  background: ${({ theme }) => theme.colors.purpleDark};
+    background: ${({ theme }) => theme.colors.purpleDark};
   }
 `;
