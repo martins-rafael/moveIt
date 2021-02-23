@@ -13,12 +13,12 @@ export const Container = styled.header`
     flex: 1;
     margin: 0 1.5rem;
     height: 4px;
-    background: var(--color-gray-line);
+    background: ${({ theme }) => theme.colors.grayLine};
     border-radius: 4px;
 
     div {
       height: 4px;
-      background: var(--color-green);
+      background: ${({ theme }) => theme.colors.green};
       border-radius: 4px;
     }
   }
