@@ -4,6 +4,7 @@ import ExperienceBar from '../../components/ExperienceBar';
 import Profile from '../../components/Profile';
 import CompletedChallenges from '../../components/CompletedChallenges';
 import Countdown from '../../components/Countdown';
+import ChallengeBox from '../../components/ChallengeBox';
 
 import { Container } from './styles';
 
@@ -22,7 +23,9 @@ const HomePage = () => (
         <Countdown />
       </div>
 
-      <div></div>
+      <div>
+        <ChallengeBox />
+      </div>
     </section>
   </Container>
 );

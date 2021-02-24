@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+interface CountdownButtonProps {
+  active: boolean;
+}
 
 export const Container = styled.div`
   display: flex;
@@ -15,7 +19,7 @@ export const Container = styled.div`
     font-size: 8.5rem;
     text-align: center;
     background: ${({ theme }) => theme.colors.backgroundLight};
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 
     span {
@@ -38,21 +42,47 @@ export const Container = styled.div`
 `;
 
 export const CountdownButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  width: 100%;
-  height: 5rem;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: ${({ theme }) => theme.colors.text};
-  background: ${({ theme }) => theme.colors.purple};
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.2s;
+  ${({ theme }) => css<CountdownButtonProps>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: ${theme.colors.text};
+    background: ${theme.colors.purple};
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
 
-  &:hover {
-    background: ${({ theme }) => theme.colors.purpleDark};
-  }
+    img {
+      margin-left: 8px;
+    }
+
+    &:not(:disabled):hover {
+      background: ${theme.colors.purpleDark};
+    }
+
+    &:disabled {
+      background: ${theme.colors.backgroundLight};
+      border-bottom: 4px solid ${theme.colors.green};
+      cursor: not-allowed;
+    }
+
+    ${(props) =>
+      props.active &&
+      css`
+        background: ${theme.colors.backgroundLight};
+
+        img {
+          filter: brightness(2);
+        }
+
+        &:not(:disabled):hover {
+          background: ${theme.colors.red};
+        }
+      `}
+  `}
 `;
