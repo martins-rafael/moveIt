@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
+
 import { Container, CurrentExperience } from './styles';
 
 const ExperienceBar = () => {
