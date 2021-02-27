@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { CountdownProvider } from '../../contexts/CountdownContext';
 
+import Sidebar from '../../components/Sidebar';
 import ExperienceBar from '../../components/ExperienceBar';
 import Profile from '../../components/Profile';
 import CompletedChallenges from '../../components/CompletedChallenges';
@@ -14,6 +15,8 @@ const HomePage = () => (
     <Head>
       <title>Início | Move.it</title>
     </Head>
+
+    <Sidebar />
 
     <ExperienceBar />
 
