@@ -14,7 +14,7 @@ export const Container = styled.div`
   text-align: center;
   background: ${({ theme }) => theme.colors.backgroundLight};
   border-radius: 5px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
 export const ChallengeNotActive = styled.div`

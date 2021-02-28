@@ -9,7 +9,7 @@ export const Overlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: ${({ theme }) => theme.colors.backgroundOverlay};
 `;
 
 export const Container = styled.div`
@@ -18,9 +18,9 @@ export const Container = styled.div`
   width: 100%;
   max-width: 400px;
   text-align: center;
-  background: linear-gradient(180deg, #21262d 0%, #0d1117 100%);
+  background: ${({ theme }) => theme.colors.backgroundLight};
   border-radius: 5px;
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+  box-shadow: ${({ theme }) => theme.boxShadow};
 
   header {
     font-size: 8.75rem;

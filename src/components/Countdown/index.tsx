@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import { RiCloseFill } from 'react-icons/ri';
+
 import { CountdownContext } from '../../contexts/CountdownContext';
 
 import { Container, CountdownButton } from './styles';
@@ -42,7 +44,7 @@ const Countdown = () => {
           {isActive ? (
             <CountdownButton active={isActive} onClick={resetCountdown}>
               Abandonar ciclo
-              <img src="icons/close.svg" alt="Abandonar" />
+              <RiCloseFill />
             </CountdownButton>
           ) : (
             <CountdownButton active={isActive} onClick={startCountdown}>

@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 
+interface LightSwitchProps {
+  activeTheme: string;
+}
+
 export const Container = styled.div`
   position: fixed;
   top: 0;
@@ -10,7 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 7rem;
-  background: linear-gradient(180deg, #21262d 0%, rgba(13, 17, 23, 0) 100%);
+  background: ${({ theme }) => theme.gradient};
 
   img {
     margin: 2rem;
@@ -41,6 +45,14 @@ export const Container = styled.div`
   }
 `;
 
-export const LightSwitch = styled(HiOutlineLightBulb)`
+export const LightSwitch = styled(HiOutlineLightBulb)<LightSwitchProps>`
   cursor: pointer;
+
+  ${({ activeTheme }) =>
+    activeTheme === 'dark' &&
+    css`
+      &:hover {
+        color: #ffff00 !important;
+      }
+    `}
 `;
