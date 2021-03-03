@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { HiOutlineLightBulb } from 'react-icons/hi';
 
 interface LightSwitchProps {
   activeTheme: string;
@@ -20,7 +19,7 @@ export const Container = styled.div`
     margin: 2rem;
   }
 
-  div {
+  > nav {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -33,25 +32,27 @@ export const Container = styled.div`
         color: ${theme.colors.text};
         transition: color 0.2s;
 
-        &:first-child {
-          color: ${theme.colors.purple};
-        }
-
         &:hover {
           color: ${theme.colors.purple};
         }
       `}
     }
+
+    > svg {
+      color: ${({ theme }) => theme.colors.purple};
+    }
   }
 `;
 
-export const LightSwitch = styled(HiOutlineLightBulb)<LightSwitchProps>`
-  cursor: pointer;
+export const LightSwitch = styled.div<LightSwitchProps>`
+  svg {
+    cursor: pointer;
+  }
 
   ${({ activeTheme }) =>
     activeTheme === 'dark' &&
     css`
-      &:hover {
+      svg:hover {
         color: #ffff00 !important;
       }
     `}
