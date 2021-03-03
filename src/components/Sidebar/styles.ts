@@ -9,11 +9,20 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   bottom: 0;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 7rem;
   background: ${({ theme }) => theme.gradient};
+
+  @media (max-width: 1160px) {
+    right: 0;
+    width: 100%;
+    height: 7rem;
+    flex-direction: row;
+    background: ${({ theme }) => theme.colors.background};
+  }
 
   img {
     margin: 2rem;
@@ -25,6 +34,10 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1160px) {
+      flex-direction: row;
+    }
 
     svg {
       ${({ theme }) => css`
