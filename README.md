@@ -16,7 +16,7 @@
 
 ## Tópicos 
 
-[Sobre o Move.it](#sobre-o-move.it)
+[Sobre o Move.it](#sobre-o-moveit)
 
 [Tecnologias](#tecnologias)
 
@@ -51,7 +51,9 @@ Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript Cookie](https://github.com/js-cookie/js-cookie)
 - [Styled Components](https://styled-components.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 - [VS Code](https://code.visualstudio.com/) com [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) e [EditorConfig](https://editorconfig.org/)
 
 <br>
