@@ -7,9 +7,6 @@
   <a href="https://opensource.org/licenses/MIT">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-6E40C9?style=flat-square">
   </a>
-  <a href="https://github.com/martins-rafael/moveIt/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/martins-rafael/moveIt?color=6E40C9&style=flat-square">
-  </a>
 </p>
 
 <img align="right" src=".github/icon.svg" width="35%" alt="Move.it">
@@ -65,16 +62,16 @@ Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 git clone https://github.com/martins-rafael/moveIt.git
 # ou use a opção de download.
 
-# Entre na pasta web com 
+# Entre na pasta do projeto com 
 cd moveIt
 
 # Instale as dependências
 yarn install
 
-# Rode o aplicação
+# Rode a aplicação
 yarn dev
 
-# Acesse http://localhost:3000 no seu navagador.
+# Acesse http://localhost:3000 no seu navegador.
 ```
 
 <br>
