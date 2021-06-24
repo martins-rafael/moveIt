@@ -18,7 +18,7 @@ interface ThemeProviderProps {
 export const ThemeContext = createContext({} as ThemeContextData);
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState('light');
 
   function toggleTheme() {
     if (theme === 'light') {
