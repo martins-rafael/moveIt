@@ -61,7 +61,7 @@ export const CountdownButton = styled.button`
 
     svg,
     img {
-      margin-left: 8px;
+      margin-left: 4px !important;
     }
 
     &:not(:disabled):hover {

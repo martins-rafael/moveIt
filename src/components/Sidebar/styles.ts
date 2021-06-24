@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
 
   img {
-    margin: 2rem;
+    padding: 2rem !important;
   }
 
   > nav {

@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Image from 'next/image';
 import { RiCloseFill } from 'react-icons/ri';
 
 import { CountdownContext } from '../../contexts/CountdownContext';
@@ -37,7 +38,12 @@ const Countdown = () => {
       {hasFinished ? (
         <CountdownButton disabled active={isActive}>
           Ciclo encerrado
-          <img src="icons/check-circle.svg" alt="Completado" />
+          <Image
+            src="/icons/check-circle.svg"
+            alt="Completado"
+            width={20}
+            height={20}
+          />
         </CountdownButton>
       ) : (
         <>
@@ -49,7 +55,12 @@ const Countdown = () => {
           ) : (
             <CountdownButton active={isActive} onClick={startCountdown}>
               Iniciar um ciclo
-              <img src="icons/play-arrow.svg" alt="Iniciar" />
+              <Image
+                src="/icons/play-arrow.svg"
+                alt="Iniciar"
+                width={24}
+                height={24}
+              />
             </CountdownButton>
           )}
         </>

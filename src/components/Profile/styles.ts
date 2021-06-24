@@ -4,9 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  > img {
-    width: 5.5rem;
-    height: 5.5rem;
+  img.avatar {
     border-radius: 50%;
   }
 
@@ -23,8 +21,12 @@ export const Container = styled.div`
       margin-top: 0.5rem;
       font-size: 1rem;
 
+      div {
+        margin: 0;
+      }
+
       img {
-        margin-right: 0.5rem;
+        padding-right: 0.5rem !important;
       }
     }
   }

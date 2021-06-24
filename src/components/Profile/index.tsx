@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Image from 'next/image';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 
 import { Container } from './styles';
@@ -7,12 +8,18 @@ const Profile = () => {
   const { level } = useContext(ChallengesContext);
   return (
     <Container>
-      <img src="https://github.com/martins-rafael.png" alt="Rafael Martins" />
+      <Image
+        className="avatar"
+        src="https://github.com/martins-rafael.png"
+        alt="Rafael Martins"
+        width={60}
+        height={80}
+      />
 
       <div>
         <strong>Rafael Martins</strong>
         <p>
-          <img src="icons/level.svg" alt="Level" />
+          <Image src="/icons/level.svg" alt="Level" width={14} height={16} />
           Level {level}
         </p>
       </div>

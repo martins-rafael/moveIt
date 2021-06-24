@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Image from 'next/image';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 import { Container, Overlay } from './styles';
 
@@ -14,7 +15,7 @@ const LevelUpModal = () => {
         <p>Você alcançou um novo level</p>
 
         <button onClick={closeLevelUpModal}>
-          <img src="/icons/close.svg" alt="Fechar" />
+          <Image src="/icons/close.svg" alt="Fechar" width={40} height={40} />
         </button>
       </Container>
     </Overlay>
