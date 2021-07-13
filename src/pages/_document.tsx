@@ -44,6 +44,11 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
           />
+          <link rel="manifest" href="/manifest.json" />
+          <meta
+            name="description"
+            content="Recupere o foco e seja mais produtivo com o Move.it!"
+          />
         </Head>
         <body>
           <Main />

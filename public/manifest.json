@@ -1,0 +1,21 @@
+{
+  "name": "Move.it",
+  "short_name": "Move.it",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#6E40C9",
+  "description": "Recupere o foco e seja mais produtivo com o Move.it!",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#6E40C9"
+}
