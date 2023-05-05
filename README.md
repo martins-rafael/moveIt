@@ -1,11 +1,9 @@
 # Move.it
 
 <p>
-  <img src="https://img.shields.io/badge/made%20by-RAFAEL%20MARTINS-6E40C9?style=flat-square">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/martins-rafael/moveIt?color=6E40C9&style=flat-square">
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/martins-rafael/moveIt?color=6E40C9&style=flat-square">
   <a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-6E40C9?style=flat-square">
   </a>
 </p>
 
@@ -49,9 +47,7 @@ Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [JavaScript Cookie](https://github.com/js-cookie/js-cookie)
-- [Styled Components](https://styled-components.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [VS Code](https://code.visualstudio.com/) com [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) e [EditorConfig](https://editorconfig.org/)
 
 <br>
 
@@ -59,17 +55,18 @@ Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 
 ```bash
 # Abra um terminal e copie este repositório com o comando
-git clone https://github.com/martins-rafael/moveIt.git
+git clone https://github.com/chocolesdeveloper/move.it
 # ou use a opção de download.
-
-# Entre na pasta do projeto com 
-cd moveIt
 
 # Instale as dependências
 yarn install
+or
+npm install
 
 # Rode a aplicação
 yarn dev
+or
+npm run dev
 
 # Acesse http://localhost:3000 no seu navegador.
 ```
@@ -88,7 +85,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 ---
 
-Feito com :purple_heart: by [Rafael Martins](https://github.com/martins-rafael)
+Feito com :purple_heart: by [William Ferreira](https://github.com/chocolesdeveloper))
 
-[![Linkedin Badge](https://img.shields.io/badge/-Rafael%20Martins-6E40C9?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaeldcmartins/)](https://www.linkedin.com/in/rafaeldcmartins/) 
-[![Gmail Badge](https://img.shields.io/badge/-rafaeldcmartins@gmail.com-6E40C9?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeldcmartins@gmail.com)](mailto:rafaeldcmartins@gmail.com)
